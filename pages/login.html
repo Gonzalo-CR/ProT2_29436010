@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arte IA</title>
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet preconnect  " type="text/css" href="../assets/css/miestilo.css">
+    <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+    <h1>Bienvenido a <strong>Arte IA</strong></h1>
+  </header>
+  <nav class="navbar navbar-expand-lg bg-body-green">
+    <div class="container-fluid">
+      <div class="navbar-header">
+      <a class="navbar-brand me-auto barra" href="../index.html">
+     
+      <img src="../assets/img/logo.png" alt="marca" width="75" height="30" class="img-fluid"/>
+      </a> 
+    </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html"></a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="./quienes_somos.html">Quienes somos</a>
+          <li class="nav-item">
+            <a class="nav-link" href="./acerca_de.html">Acerca de</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./registro.html">Registrarse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./login.html">Login</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+
+  <section class="container fondo container-principal">
+    <div class="container mt-5">
+      <h1>Login</h1>
+      <form>
+        <div class="mb-3">
+          <label for="inputEmailLogin" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmailLogin" placeholder="Ingresa tu email" required autocomplete="email">
+        </div>
+        <div class="mb-3">
+          <label for="inputPasswordLogin" class="form-label">Contraseña</label>
+          <div class="input-group">
+            <input type="password" class="form-control" id="inputPasswordLogin" placeholder="Ingresa tu contraseña" required autocomplete="current-password">
+            <button class="btn btn-outline-secondary" type="button" id="togglePasswordLogin">Mostrar</button>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#togglePasswordLogin').on('click', function(){
+        const passwordField = $('#inputPasswordLogin');
+        const type = passwordField.attr('type') === 'password' ? 'text' : 'password';
+        passwordField.attr('type', type);
+        $(this).text($(this).text() === 'Mostrar' ? 'Ocultar' : 'Mostrar');
+      });
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-space footer-content">
+        <div class="rrss-logos social-icons">
+            <a href="#"> <img class="footer-img social-icon" src="../assets/img/fb.png" alt="Facebook"></a>
+            <a href="#"><img class="footer-img social-icon" src="../assets/img/ig.jpg" alt="Instagram"></a>
+            <a href="#"><img class="footer-img social-icon" src="../assets/img/x.jpg" alt="X"></a>
+        </div>
+        <div class="footer-logo"> <a href="https://www.neadigitalhub.com/"><img class="footer-logo-img" src="../assets/img/DH-NEA-mini.png" alt="Home" style="max-height: 5em;" ></a></div>
+        </div>
+        <p>
+        &copy; Created for <strong>NEA Digital Hub - Designs</strong> from <a href="https://www.neadigitalhub.com/" target="_blank" rel="noopener">Arte IA Company // 2024</a></p>
+    </footer>
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
