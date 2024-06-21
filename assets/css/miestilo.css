@@ -152,6 +152,7 @@
       padding: 0.5em;
     }
     .footer-logo-img {
+      max-height: 5em;
       border-radius: 1.5em;
       padding: 0.5em;
     }
