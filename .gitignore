@@ -1,0 +1,43 @@
+# Archivos de configuración específicos del sistema operativo
+Thumbs.db
+ehthumbs.db
+*.DS_Store
+*.mp3
+*.mp4
+*.mov
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.svg
+*.psd
+*.ai
+*.fla
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+*.txt
+*.md
+*.log
+*.cache
+*.tmp
+*.temp
+*.out
+*.err
+
+# Archivos de configuración de CodeIgniter
+application/config/database.php
+application/config/config.php
+application/logs/*
+writable/cache/*
+writable/logs/*
+writable/session/*
+writable/uploads/*
+
+# Directorios específicos
+tests/
+vendor/
